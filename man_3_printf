@@ -1,0 +1,20 @@
+.TH _PRINTF 3 "23 October 2018" "3.0" "holberton man page"
+.SH NAME
+.B _printf 
+.SH SYNOPSIS
+.B #include "holberton.h"
+.SH DESCRIPTION
+This printf function writes output to stdout 
+according to a format. This function handles 
+conversion specifiers for: c, s, %, d, i. 
+
+.SS Returns
+Function returns number of characters printed
+.SH SEE ALSO
+.printf(3)
+.SH BUGS
+None to report at the time bugs.
+.SH AUTHOR
+Thang Louis Nguyen,
+Oleksandr Mapatelian,
+Kenneth Mensah
