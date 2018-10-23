@@ -1,13 +1,14 @@
-.TH _PRINTF 3 "23 October 2018" "3.0" "holberton man page"
+.TH _PRINTF "23 October 2018" "3.0" "holberton man page"
 .SH NAME
+printf - printf function from scratch
 .B _printf 
 .SH SYNOPSIS
 .B #include "holberton.h"
 .SH DESCRIPTION
 This printf function writes output to stdout 
 according to a format. This function handles 
-conversion specifiers for: c, s, %, d, i. 
-
+conversion specifiers for: c, s, %, d, i. This function
+does not handle any precision, width, or length modifiers.
 .SS Returns
 Function returns number of characters printed
 .SH SEE ALSO
