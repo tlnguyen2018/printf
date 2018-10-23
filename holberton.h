@@ -12,7 +12,7 @@ typedef struct special
 
 int _printf(const char *format, ...);
 void _putchar(char);
-int _intprint (int);
-void _str (char*);
+int _intprint (va_list list);
+void _str (va_list list);
 
 #endif
