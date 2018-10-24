@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdarg.h>
 /**
  *ptcharstring - entry point
  *@s: pointer to the string
@@ -11,8 +10,6 @@ void ptcharstring(char *s)
 		return;
 	while (*s)
 	{
-		_putchar(*s);
-		s++;
 	}
 }
 
@@ -32,29 +29,34 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
+	va_list list;
+	char buffer[1024];
+	 [] = {{"c", },
+				      {"s", },
+				      {"i", },
+				      {"d", },
 	letter = va_arg(list, int);
 	word = va_arg(list, char *);
 
-	for (i = 0 ; format[i] != 0; i++)
-	{
-		while (format[i] != '%')
+		if (format == NULL)
+			return (-1);
+			while (format[i] != '0')
 		{
-			_putchar(format[i]);
+			if (format[i] == '%' && format[i + 1] != '\0')
+		{
 			i++;
 		}
 		i++;
 		if (format[i] == 'c')
 		{
-			_putchar(letter);
 			break;
 		}
 		if (format[i] == 's')
 		{
-			ptcharstring(word);
+			write(1, &format[i], 1);
 			break;
 		}
 	}
 	va_end(list);
-	_putchar('\n');
 	return (0);
 }
