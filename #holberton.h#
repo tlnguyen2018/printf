@@ -1,4 +1,4 @@
-#ifndef _HOLBERTON_H_
+nd _HOLBRTON_H_
 #include "h/**
  *_str - entry point
  *@s: pointer to the string

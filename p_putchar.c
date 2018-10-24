@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "holberton.h"
 
 /**
  * _putchar - writes the character c to stdout
@@ -7,7 +7,8 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char a)
+void p_putchar(va_list list)
 {
-	return (write(1, &a, 1));
+	int a = va_arg(list, int);
+	_putchar(a);
 }
