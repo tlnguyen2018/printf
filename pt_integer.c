@@ -19,7 +19,7 @@ int pt_integer(va_list list)
 	}
 	else
 	{
-		n = a;
+		n = i;
 	}
 	while (n / bottom > 9)
 	{

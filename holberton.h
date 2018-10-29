@@ -7,11 +7,10 @@
 
 /**
  * struct structtype - type of printf and function pointer
- * @name: name
- * @age: age
- * @owner: owner
+ * @print_type: character specify what type to print
+ * @f: function pointer
  *
- * Description: dog type
+ * Description: struct include specifier and function pointer
  */
 typedef struct structtype
 {

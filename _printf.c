@@ -1,13 +1,14 @@
+#include "holberton.h"
+
 /**
  * _printf - created printf function according to specifier
  * @format: formatted string
+ * struct_type ops - struct include specifier and function
+ * Description : ops
  * Return: length of printed string
  */
 int _printf(const char *format, ...)
 {
-	va_list list;
-	int i = 0;
-
 	struct_type ops[] = {
 		{"c", pt_char},
 		{"s", pt_str},
@@ -15,6 +16,10 @@ int _printf(const char *format, ...)
 		{"i", pt_integer},
 		{NULL, NULL}
 	};
+
+	va_list list;
+	int i;
+
 	if (format == NULL)
 	{
 		return (0);
