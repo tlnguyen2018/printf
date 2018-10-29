@@ -1,0 +1,27 @@
+/**
+ * _printf - created printf function according to specifier
+ * @format: formatted string
+ * Return: length of printed string
+ */
+int _printf(const char *format, ...)
+{
+	va_list list;
+	int i = 0;
+
+	struct_type ops[] = {
+		{"c", ch},
+		{"s", str},
+		{"d", _int},
+		{"i", _int},
+		{NULL, NULL}
+	};
+
+	if (format == NULL)
+	{
+		return (-1);
+	}
+	va_start(list, format);
+	a = print_op(format, ops, list);
+	va_end(list);
+	return (a);
+}
